@@ -5,13 +5,14 @@
 int main()
 
 {
-	char i;
+	int i = 0;
+	char a;
 	printf("알파벳을 입력해주세요.\n");
 
-	scanf("%c", &i);
+	scanf("%c", &a);
 
-	for (i; i <= 122; i++) {
-		
+	for (i = a; i <= 'z'; i++) {
+
 		printf("%c 입니다.\n", i);
 
 	}
