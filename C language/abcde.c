@@ -5,7 +5,7 @@
 int main()
 
 {
-	int i = 0;
+	int i;
 	char a;
 	printf("알파벳을 입력해주세요.\n");
 
