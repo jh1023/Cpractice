@@ -1,0 +1,114 @@
+//#include<stdio.h>
+
+/*
+@@@@@@@@@@@@@@@@@@@@@@@@@@191018 github에 올리기
+
+CelToFah()  //섭씨 온도를 화씨 온도로 반환
+FahToCel() //화씨 온도를 섭씨 온도로 반환
+
+//공식 :Fah = 1.8 x Cel +32
+//      Cel = (Fah - 32) / 1.8;
+
+
+
+
+void CelToFah(double Cel)
+{
+	double Fah = 1.8 * Cel + 32;
+	printf("%.1f\n", Fah);
+
+}
+
+void FahToCel(double Fah)
+{
+	double Cel = (Fah - 32) / 1.8;
+	printf("%.1f\n", Cel);
+
+}
+
+
+int main()
+{
+	CelToFah(2);
+	FahToCel(36);
+
+
+
+	return 0;
+}
+////////
+*/
+
+
+
+
+
+
+
+/*
+세개의 정수를 입력받아서 그 중 가장 큰 수를 반환 하는 함수와 가장 작은 수를 
+반환하는 함수를 정의
+함수를 호출하는 main 함수 작성  
+@@@@@@@@@@@@@@@@@@@@@@@@@@191018 github에 올리기
+*/
+
+
+#include<stdio.h>
+
+int getBiggest(int a, int b, int c)
+{
+	int nMax = 0;
+
+	if (a > b && a > c) {        //a 가 가장 큰 경우
+		nMax = a;
+	}
+	else if (b > c) {    // b가 가장 큰 경우 
+		nMax = b;
+	}
+	else {    //c 가 가장 큰 경우
+		nMax = c;
+	}
+
+}
+
+int getSmallest(int d, int e, int f)
+{
+	int Min = 0;
+
+	if (d < e&& d < f) {        
+		Min = d;
+	}
+	else if (e < f) {    // b가 가장 작은 경우 
+		Min = e;
+	}
+	else {    //c 가 작은경우
+		Min = f;
+	}
+
+}
+
+void main()
+{
+	int a, b, c;
+	printf(" 최대 숫자 구하기\n");
+	printf(" 입력하세요\n");
+
+
+	scanf("%d %d %d", &a, &b, &c);
+
+	int d, e, f;
+	printf(" 최소 숫자 구하기\n");
+	printf(" 입력하세요\n");
+
+
+	scanf("%d %d %d", &d, &e, &f);
+
+
+	int big = getBiggest(a, b, c);
+	int small = getSmallest(d, e, f);
+
+	printf("최대 숫자 : %d\n", big);
+	printf("최소 숫자: %d\n", small);
+
+	return 0;
+}
