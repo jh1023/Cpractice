@@ -1,2 +1,1 @@
-aaaaa
-ssds
+c 언어 연습
